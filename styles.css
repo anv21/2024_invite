@@ -33,26 +33,18 @@ body {
   padding: 2rem;
 }
 
-.endCountWrapper {
-  background-color: var(--caribbean-current) !important;
-}
-
 .content {
   max-width: 80vw;
-}
-
-
-.intro, .date {
   display: grid;
   justify-items: center;
   align-items: center;
 }
 
-.intro {
+.right-hand-layout {
   grid-template-columns: 1fr 2fr;
 }
 
-.date {
+.left-hand-layout {
   grid-template-columns: 2fr 1fr;
 }
 
@@ -87,11 +79,11 @@ a:hover .link {
   background: var(--dark-cyan);
 }
 
-.teal {
+.bg-teal {
   background: var(--teal);
 }
 
-.bg-caribbean-current {
+.bg-caribbean-current, .endCountWrapper  {
   background: var(--caribbean-current);
 }
 
@@ -216,30 +208,42 @@ a:hover .link {
   align-items: center;
 }
 
-@media  (orientation: landscape) and (max-width: 992px) {
-  .content-heading {
-    font-size: 7vw;
-  }
+.endCountWrapper img {
+  width: 50%;
+}
 
+@media  (orientation: landscape) and (max-width: 992px) {
   img {
     width: 70%;
   }
 
-  p {
+  .endCountWrapper img {
+    width: 40%;
+  }
+
+  .endCountWrapper .content-heading {
+    font-size: 5vw;
+  }
+
+  .content-heading {
+    font-size: 7vw;
+  }
+
+  p, .section {
     font-size: 4vw;
   }
 
   .flip-clock__slot {
     font-size: 2vw;
   }
-
-  .section {
-    font-size: 4vw;
-  }
 }
 
 @media  (orientation: portrait) and (max-width: 992px) {
-  .intro, .date {
+  img {
+    width: 70%;
+  }
+
+  .content, .endCountWrapper {
     grid-template-columns: 1fr;
   }
 
@@ -247,24 +251,16 @@ a:hover .link {
     font-size: 12vw;
   }
 
-  img {
-    width: 70%;
-  }
-
-  p {
-    font-size: 6vw;
-  }
-
-  .section {
-    font-size: 2vw;
-  }
-
   .flip-clock__slot {
     font-size: 2vw;
   }
 
   .section {
     font-size: 4vw;
+  }
+
+  p {
+    font-size: 6vw;
   }
 
   .card {
