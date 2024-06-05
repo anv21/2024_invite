@@ -10,15 +10,30 @@
 </head>
 
 <body>
+  <nav class="header__nav nav-bar">
+    <div class="toggle-menu">
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="line line3"></div>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-list-item"><a href="#preview" class="nav-link">Home</a></li>
+      <li class="nav-list-item"><a href="#date" class="nav-link">Date & Time</a></li>
+      <li class="nav-list-item"><a href="#wishlist" class="nav-link">Wishlist</a></li>
+      <li class="nav-list-item"><a href="#countdown" class="nav-link">Countdown</a></li>
+    </ul>
+  </nav>
+
   <div id="main" class="wrapper">
-    <div class="section">
+    
+    <div id="preview" class="section">
       <div class="content right-hand-layout">
         <img src="./img/preview.png">
         <h1 class="content-heading">🎉 You're Invited to My Birthday Party! 🎉</h1>
       </div>
     </div>
 
-    <div class="section bg-blue">
+    <div id="date" class="section bg-blue">
       <div class="content left-hand-layout">
         <div>
           <h1 class="content-heading">Date & Time</h2>
@@ -29,7 +44,7 @@
       </div>
     </div>
 
-    <div class="section bg-dark-cyan">
+    <div id="wishlist" class="section bg-dark-cyan">
       <div class="content right-hand-layout">
         <img src="./img/giphy.gif">
         <div>
@@ -49,9 +64,9 @@
       </div>
     </div>
 
-    <div class="section bg-caribbean-current">
+    <div id="countdown" class="section bg-caribbean-current">
       <div class="content">
-        <h1 class="content-heading">Countdown to my birthday</h1>
+        <h1 class="content-heading">Countdown to my birthday party</h1>
         <div id="flip_timer"></div>
       </div>
     </div>

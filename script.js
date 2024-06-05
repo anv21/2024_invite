@@ -1,3 +1,13 @@
+const navBar = document.querySelector('.nav-bar')
+document.querySelector('.toggle-menu').addEventListener('click', () => {
+  navBar.classList.toggle('toggle')
+})
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', (event) => {
+    navBar.classList.toggle('toggle')
+  })
+})
+
 function changeImage () {
   document.getElementById('endCount').style.display = 'flex'
   document.getElementById('main').style.display = 'none'
@@ -101,6 +111,6 @@ class Clock {
   }
 }
 
-const deadline = new Date(Date.parse('2024/06/28'))
+const deadline = new Date(Date.parse('2024/06/29 12:00'))
 const clock = new Clock(deadline, changeImage)
 document.getElementById('flip_timer').appendChild(clock.el)
