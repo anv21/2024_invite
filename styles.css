@@ -326,6 +326,17 @@ a:hover .link {
   transform: scaleX(1);
 }
 
+@media (orientation: landscape) and (max-width: 1450px) {
+  .agenda-item {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+  }
+
+  .agenda-item-details p {
+    font-size: 1rem;
+  }
+}
+
 @media (orientation: landscape) and (max-width: 992px) {
   .nav-bar {
     width: 40%;
